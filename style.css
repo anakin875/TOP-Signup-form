@@ -128,3 +128,14 @@ body{
 a{
     color: #354F52;
 }
+
+footer{
+    position: absolute;
+    margin: 950px 0 0 175px;
+    color: #f9fafb;
+}
+
+footer>a{
+    color: #f9fafb;
+    text-decoration: underline;
+}
