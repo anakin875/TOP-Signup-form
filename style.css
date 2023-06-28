@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto;
+}
+:root{
+    --right-padding-margin: 0 50px 0 20px;
+    --neg-padding-margin: calc(-1 * var(--right-padding-margin))
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex: 1 1 auto;
+    height: 100vh;
+}
+
+
+.left{
+    width: 1000px;
+    background: url(keith-misner-h0Vxgz5tyXA-unsplash.jpg) center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.odin-logo{
+    height: 150px;
+}
+
+.right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f9fafb;
+}
+
+.text{
+    color: #363635;
+    width: 60%;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.container{
+    color: #363635;
+    padding: 0 200px 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px grey;
+    margin: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    width: 100%;
+}
+
+.form>p{
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.col1,.col2{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    gap: 5px;
+}
+
+
+.input-button{
+    color: #f9fafb;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #354F52;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 0 0 20px 50px
+}
+
+.input-button:active{
+    background-color: #2F3E46;
+}
+
+.input-field{
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.input-field:valid{
+    border: 1px solid #84A98C;
+}
+
+.input-field:invalid{
+    border: 1px solid #BC4749;
+}
+
+
+.label{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+a{
+    color: #354F52;
+}

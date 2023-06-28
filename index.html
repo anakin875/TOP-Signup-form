@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP-Signup form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&family=VT323&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="odin-lined.png" alt="" class="odin-logo">
+            <p>Sign up!</p>
+        </div>
+    </div>
+        <div class="right">
+            <div class="text">
+                <h3>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+                </h3>
+                <h3>You <em>know</em> you want to.</h3>
+            </div>
+
+
+            <form action="#" class="form">
+                
+                <div class="container">
+                    <p>Let's do this!</p>
+                    <div class="inputs">
+                        <div class="col1">
+                            <label for="fname" class="label">First name</label>
+                            <input type="text" id="fname" name="fname" class="input-field" required>
+                            <label for="lname" class="label">Last name</label>
+                            <input type="text" id="lname" class="input-field" required>
+                            <label for="email" class="label">Email</label>
+                            <input type="email" id="email" class="input-field" title="Enter a valid email" required>
+                        </div>
+                        <div class="col2">
+                            <label for="phone-number" class="label">Phone number</label>
+                            <input type="tel" id="phone-number" class="input-field" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" required>
+                            <label for="password" class="label">Password</label>
+                            <input type="password" id="password" class="input-field" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                            <label for="cpassword" class="label">Confirm password</label>
+                            <input type="password" id="cpassword" class="input-field" required>
+                        </div>
+                    </div>
+
+                </div>
+                <input type="submit" class="input-button" value="Create account">
+            </form>
+
+
+            <p class="text">Already have an account? <a href="">Log in</a></p>
+        </div>
+</body>
+</html>
