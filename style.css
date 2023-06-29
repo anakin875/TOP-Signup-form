@@ -3,45 +3,55 @@
     text-decoration: none;
     font-family: Roboto;
 }
-:root{
-    --right-padding-margin: 0 50px 0 20px;
-    --neg-padding-margin: calc(-1 * var(--right-padding-margin))
-}
 
 body{
     margin: 0;
+    padding: 0;
     display: flex;
-    flex: 1 1 auto;
+}
+
+.left, .right{
     height: 100vh;
 }
 
-
 .left{
-    width: 1000px;
     background: url(keith-misner-h0Vxgz5tyXA-unsplash.jpg) center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    flex: 40%;
+    flex-flow: column wrap;
     justify-content: center;
+    position:relative;
 }
 
 .logo{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-size: 32px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .odin-logo{
     height: 150px;
 }
 
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: #f9fafb;
+}
+
+footer>a{
+    color: #f9fafb;
+    text-decoration: underline;
+}
+
 .right{
-    width: 100%;
     display: flex;
+    flex: 60%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -70,7 +80,6 @@ body{
 }
 
 .form>p{
-
     font-weight: bold;
     font-size: 20px;
 }
@@ -84,10 +93,9 @@ body{
 .col1,.col2{
     display: flex;
     flex-flow: column wrap;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     gap: 5px;
 }
-
 
 .input-button{
     color: #f9fafb;
@@ -127,15 +135,4 @@ body{
 
 a{
     color: #354F52;
-}
-
-footer{
-    position: absolute;
-    margin: 950px 0 0 175px;
-    color: #f9fafb;
-}
-
-footer>a{
-    color: #f9fafb;
-    text-decoration: underline;
 }
